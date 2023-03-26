@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakaba Soccer Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="image/logo/iconoWakabaColor.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <div class="contenedorHeader">
+
+            <a href="index.html"><img src="image/logo/logoWakaba.png" alt=""></a>
+            <form id="buscador">
+
+                <div class="contenedorForm">
+
+                    <div class="form1">
+                        <label for="">Buscar por equipo.</label>
+                        <input type="text" id="buscarPorNombre" placeholder="Ej. Argentina">
+                    </div>
+                    <div class="form2">
+                        <label for="">Filtrar por precio.</label>
+                        <input type="number" id="buscarPorPrecio" placeholder="Ingrese monto">
+                    </div>
+
+                </div>
+                <button type="button" id="botonBuscador">Buscar</button>
+
+            </form>
+
+        </div>
+    </header>
+
+
+    <div id="contenedor">
+
+        <button type="button" id="verCarrito">
+
+            <div class="contenedorCarrito">
+
+                <div class="contenedorCarrito1">
+                    <img src="image/cartIcon.png" alt="">
+                    <div id="totalaPagar"></div>
+                </div>
+
+                <div class="contenedorCarrito2">
+                    <p>Ir al<br> carrito</p>
+                </div>
+
+            </div>
+
+        </button>
+
+
+        <div class="shipping">
+
+            <img src="image/logo/envio.png" alt="envio">
+            <h3>Compras mayores a $50.000 tienen envios gratis.</h3>
+
+        </div>
+
+
+        <img name="slider" class="slider" alt="">
+
+
+        <div id="miCarrito"></div>
+
+
+        <div id="contenedorResultado">
+            <div id="resultadoBuscador">
+            </div>
+        </div>
+
+
+        <div id="misCamisetas"></div>
+
+        <div class="contenedorValoraciones">
+            <h2>Comentarios de nuestros clientes.</h2>
+            <div id="valoraciones"></div>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <p> - Wakaba Soccer Shop - ©2022 Copyright - </p>
+    </footer>
+
+
+
+    <script src="slider.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+    <script src="valoraciones.js"></script>
+</body>
+
+</html>
